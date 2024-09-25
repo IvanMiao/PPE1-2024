@@ -1,0 +1,128 @@
+  536  cd PPE
+  537  mkdir Exercice1
+  538  cd Exercice1
+  539  wget http://plurital.org/ppe1/seance1/archive-19.zip\n
+  540  ls
+  541  unzip archive-19.zip
+  542  ls
+  543  man mkdir
+  544  info mkdir
+  545  mkdir -p ./{txt,ann,img,docs}
+  546  ls
+  547  ls *.txt
+  548  ls *.ann
+  549  ls *.img
+  550  clear
+  551  mv *.txt ./txt
+  552  mv *.ann ./ann
+  553  ls
+  554  mv *.{jpg,jpeg,png,gif,svg} ./img
+  555  ls
+  556  mv *.{JPG,PNG,GIF} ./img
+  557  ls
+  558  open 13-Taipei_Taishin_Mars.webp
+  559  mv 13-Taipei_Taishin_Mars.webp ./img
+  560  ls
+  561  mv EnergieEolienne.* ./docs
+  562  ls
+  563  rm archive-19.zip
+  564  cd ./txt
+  565  ls
+  566  mkdir -p ./{2016,2017,2018}
+  567  mv 2016_* ./2016
+  568  mv 2017_* ./2017
+  569  mv 2018_* ./2018
+  570  ls
+  571  cd 2016 | mkdir -p ./{01,02,03,04,05,06,07,08,09,10,11,12} | mv 2016_01* ./01
+  572  cd 2016 | mkdir -p ./{01,02,03,04,05,06,07,08,09,10,11,12}
+  573  ls
+  574  rm -r {01,02,03,04,05,06,07,08,09,10,11,12}
+  575  ls
+  576  cd 2016
+  577  ls
+  578  mkdir -p ./{01,02,03,04,05,06,07,08,09,10,11,12}
+  579  mv 2016_01* ./01
+  580  mv 2016_02* ./02
+  581  mv 2016_03* ./03
+  582  mv 2016_04* ./04
+  583  mv 2016_05* ./05
+  584  mv 2016_06* ./06
+  585  mv 2016_07* ./07
+  586  mv 2016_08* ./08
+  587  mv 2016_09* ./09
+  588  mv 2016_10* ./10
+  589  mv 2016_11* ./11
+  590  mv 2016_12* ./12
+  591  ls
+  592  cd ..
+  593  cd ann
+  594  ls
+  595  cd ..
+  596  cd txt
+  597  ls
+  598  cd 201
+  599  cd 2016
+  600  ls
+  601  cd 01
+  602  ls
+  603  cd ../..
+  604  ls
+  605  cd 2017
+  606  for month in {01..12}; do mkdir -p "$month"; mv 2017_"$month"* "$month"/; done
+  607  ls
+  608  cd 01
+  609  ls
+  610  cd ..
+  611  cd 2018
+  612  for month in {01..12}; do mkdir -p "$month"; mv 2018_"$month"* "$month"/; done
+  613  ls
+  614  cd 01
+  615  ls
+  616  cd ..
+  617  ls 09
+  618  ls
+  619  cd 09
+  620  ls
+  621  cd ..
+  622  cd ../ann
+  623  ls
+
+  629  cd ../Documents/TAL_M1/PPE/Exercice1/ann
+  630  ls
+  631  mkdir -p ./{2016,2017,2018}
+  632  mv 2017* ./2017
+  633  mv 2017_* ./2017
+  634  ls
+  635  mv 2016_* ./2016
+  636  mv 2018_* ./2018
+  637  ls
+  638  cd 2016
+  639  mkdir -p ./{01..12}
+  640  ls
+  641  for month in {01..12}; do mkdir -p "$month"; mv 2016_"$month"* "$month"/; done
+  642  ls
+  643  cd 01
+  644  ls
+  645  cd ..
+  646  cd 2017
+  647  ls
+  648  for month in {01..12}; do mkdir -p "$month"; mv 2017_"$month"* "$month"/; done
+  649  cd ../2018
+  650  ls
+  651  for month in {01..12}; do mkdir -p "$month"; mv 2018_"$month"* "$month"/; done
+  652  ls
+  653  cd ..
+  654  cd ../txt/2018
+  655  ls
+  656  cd 12
+  657  ls
+  658  cd ../..
+  659  cd ..
+  660  cd img
+  661  ls
+  662  mkdir -p ./{Berlin,Kyoto, Paris, Rome, Taipei, Washington}
+  663  mkdir -p ./{Berlin,Kyoto,Paris,Rome,Taipei,Washington}
+  664  for city in {Berlin,Kyoto,Paris,Rome,Taipei,Washington}; do mkdir -p "$city"; mv *"$city"* "$city"/; done
+  665  ls
+  666  mkdir Tokyo
+  667  mv *Tokyo* ./Tokyo
