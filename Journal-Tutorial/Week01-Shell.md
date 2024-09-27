@@ -5,12 +5,14 @@
 ### Basic commands
 
 0. **Syntax**:
-   `Command [-Options] Argument`
-   <u>**Attention**</u>: In Shell, spaces act as separators. This can cause troubles when working with file paths that contain spaces. For a solution, see: [How To Deal With Spaces in Paths](https://medium.com/@leedowthwaite/dealing-with-spaces-in-paths-f26856aef06f) 
+    `Command [-Options] Argument`
+    <u>**Attention**</u>: In Shell, spaces act as separators. This can cause troubles when working with file paths that contain spaces. For a solution, see: [How To Deal With Spaces in Paths](https://medium.com/@leedowthwaite/dealing-with-spaces-in-paths-f26856aef06f) 
 
-1.  **Don't get lost in your files**
+<br/>
 
-   When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
+0. **Don't get lost in your files**
+
+    When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
 
 | **Command** |         **Options**          |      **Full Name**      |                     **Function**                     |
 | :---------: | :--------------------------: | :---------------------: | :--------------------------------------------------: |
@@ -20,7 +22,7 @@
 
 ​	When using `cd` ,  `./` refers to the current directory, while `../` takes us to the parent directory. `/` represents the root directory, and `~/` refers to user's home directory.
 
-
+<br/>
 
 2. **Managing files and directories**
 
@@ -34,9 +36,10 @@
 |    `mv`     |                           |      move      | move or rename a file/directory to a new location |
 |    `cp`     |                           |      copy      |           copy a file to a destination            |
 
-
+<br/>
 
 3. **Viewing file contents**
+   
    We can display file contents on the terminal, without opening any editors!
 
 | **Command** | **Option**s | **Full Name** |                         **Function**                         |
@@ -45,7 +48,7 @@
 |   `more`    |             |       -       | display the content page by page. <u>can be replaced by `less`, 'cause `less` is more powerful !</u> |
 |   `less`    |             |       -       |      open the file for viewing, allow scrolling through      |
 
-
+<br/>
 
 4. **Other**
 
@@ -54,6 +57,8 @@
 |    `man`    |             |             manual              | displays the manual for a given command. **RTFM!** |
 |   `echo`    |             |                -                |       print a line of text or variable value       |
 |   `grep`    |             | global regular expression print |  search for a specific text pattern within a file  |
+
+<br/>
 
 ---
 
