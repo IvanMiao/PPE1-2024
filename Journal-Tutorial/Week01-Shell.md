@@ -4,7 +4,7 @@
 
 1.  **Don't get lost in your files**:
 
-   When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path of a directory, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
+   When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
 
 | **Command** |         **Argument**         |      **Full Name**      |                     **Function**                     |
 | :---------: | :--------------------------: | :---------------------: | :--------------------------------------------------: |
