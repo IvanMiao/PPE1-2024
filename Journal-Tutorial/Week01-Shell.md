@@ -5,7 +5,7 @@
 ### Basic commands
 
 0. **Syntax**:
-    
+   
     `Command [-Options] Argument`
     
     <u>**Attention**</u>: In Shell, spaces act as separators. This can cause troubles when working with file paths that contain spaces. For a solution, see: [How To Deal With Spaces in Paths](https://medium.com/@leedowthwaite/dealing-with-spaces-in-paths-f26856aef06f) 
@@ -72,13 +72,15 @@ When navigating through your directories, it’s important to know where you are
   [The Shell Scripting Tutorial](https://www.shellscript.sh/) (EN)
   
   [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
+  
+  [Shell编程](https://shellscript.readthedocs.io/zh-cn/latest/index.html) [ZH]
 
 
 
 - an example:
 
 ```bash
-# !/bin/sh
+#!/bin/sh
 
 for month in {01..12}; do
 	mkdir -p "$month"
