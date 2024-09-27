@@ -4,6 +4,10 @@
 
 ### Basic commands
 
+0. **Syntax**:
+   `Command [-Options] Argument`
+   <u>**Attention**</u>: In Shell, spaces act as separators. This can cause troubles when working with file paths that contain spaces. For a solution, see: [How To Deal With Spaces in Paths](https://medium.com/@leedowthwaite/dealing-with-spaces-in-paths-f26856aef06f) 
+
 1.  **Don't get lost in your files**
 
    When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
@@ -33,6 +37,7 @@
 
 
 3. **Viewing file contents**
+   We can display file contents on the terminal, without opening any editors!
 
 | **Command** | **Option**s | **Full Name** |                         **Function**                         |
 | :---------: | :---------: | :-----------: | :----------------------------------------------------------: |
@@ -44,11 +49,11 @@
 
 4. **Other**
 
-| **Command** | **Option**s |          **Full Name**          |                   **Function**                   |
-| :---------: | :---------: | :-----------------------------: | :----------------------------------------------: |
-|    `man`    |             |             manual              |  displays the manual for a given command. RTFM!  |
-|   `echo`    |             |                -                |      print a line of text or variable value      |
-|   `grep`    |             | global regular expression print | search for a specific text pattern within a file |
+| **Command** | **Option**s |          **Full Name**          |                    **Function**                    |
+| :---------: | :---------: | :-----------------------------: | :------------------------------------------------: |
+|    `man`    |             |             manual              | displays the manual for a given command. **RTFM!** |
+|   `echo`    |             |                -                |       print a line of text or variable value       |
+|   `grep`    |             | global regular expression print |  search for a specific text pattern within a file  |
 
 ---
 
@@ -56,12 +61,33 @@
 
 ### Shell Script
 
-```shell
+- Some Tutorials:
+  [The Shell Scripting Tutorial](https://www.shellscript.sh/) (EN)
+  [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
+
+
+
+- an example:
+
+```bash
 # !/bin/sh
 
 for month in {01..12}; do
 	mkdir -p "$month"
-	mv 2016_"$month" "$month" "$month"/
+	mv 2016_"$month"* "$month"/
 done
+```
+
+
+
+
+
+#### Rewrite a script in one line
+
+If we do that, a script becomes a command that can be run directly in the terminal. (Hope it's not too long)
+
+Rewrite the script above:
+``` bash
+for month in {01..12};do mkdir -p "$month";mv 2016_"$month"* "$month"/;done
 ```
 
