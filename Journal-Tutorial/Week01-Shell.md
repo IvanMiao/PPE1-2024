@@ -5,14 +5,16 @@
 ### Basic commands
 
 0. **Syntax**:
+    
     `Command [-Options] Argument`
+    
     <u>**Attention**</u>: In Shell, spaces act as separators. This can cause troubles when working with file paths that contain spaces. For a solution, see: [How To Deal With Spaces in Paths](https://medium.com/@leedowthwaite/dealing-with-spaces-in-paths-f26856aef06f) 
 
 <br/>
 
-0. **Don't get lost in your files**
+1. **Don't get lost in your files**
 
-    When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
+When navigating through your directories, it’s important to know where you are and what files are around you. For example, If we use `pwd` to print the path, we might see something like that: `/home/username/Documents` , which tells us that we are in the directory `Documents`. This helps us understand our position, allowing us to move forward or move back on this path.
 
 | **Command** |         **Options**          |      **Full Name**      |                     **Function**                     |
 | :---------: | :--------------------------: | :---------------------: | :--------------------------------------------------: |
@@ -42,11 +44,10 @@
    
    We can display file contents on the terminal, without opening any editors!
 
-| **Command** | **Option**s | **Full Name** |                         **Function**                         |
-| :---------: | :---------: | :-----------: | :----------------------------------------------------------: |
-|    `cat`    |             |  concatenate  |          display the content of a file all at once           |
-|   `more`    |             |       -       | display the content page by page. <u>can be replaced by `less`, 'cause `less` is more powerful !</u> |
-|   `less`    |             |       -       |      open the file for viewing, allow scrolling through      |
+| **Command** | **Option**s | **Full Name** |                    **Function**                    |
+| :---------: | :---------: | :-----------: | :------------------------------------------------: |
+|    `cat`    |             |  concatenate  |     display the content of a file all at once      |
+|   `less`    |             |       -       | open the file for viewing, allow scrolling through |
 
 <br/>
 
@@ -67,7 +68,9 @@
 ### Shell Script
 
 - Some Tutorials:
+  
   [The Shell Scripting Tutorial](https://www.shellscript.sh/) (EN)
+  
   [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
 
 
@@ -85,13 +88,11 @@ done
 
 
 
+#### 	Rewrite a script in one line
 
+​	If we do that, a script becomes a command that can be run directly in the terminal. (Hope it's not too long)
 
-#### Rewrite a script in one line
-
-If we do that, a script becomes a command that can be run directly in the terminal. (Hope it's not too long)
-
-Rewrite the script above:
+​	Rewrite the script above:
 ``` bash
 for month in {01..12};do mkdir -p "$month";mv 2016_"$month"* "$month"/;done
 ```
