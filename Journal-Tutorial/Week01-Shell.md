@@ -2,7 +2,7 @@
 
 [TOC]
 
-### Basic commands
+### 1. Basic commands
 
 0. **Syntax**:
    
@@ -48,6 +48,8 @@ When navigating through your directories, it’s important to know where you are
 | :---------: | :---------: | :-----------: | :------------------------------------------------: |
 |    `cat`    |             |  concatenate  |     display the content of a file all at once      |
 |   `less`    |             |       -       | open the file for viewing, allow scrolling through |
+|   `head`    |             |       -       |       print the first 10 lines of each file        |
+|   `tail`    |             |       -       |        print the last 10 lines of each file        |
 
 <br/>
 
@@ -61,11 +63,23 @@ When navigating through your directories, it’s important to know where you are
 
 <br/>
 
+#### Wildcards
+
+Wildcard (**fr**: caractères de remplacement; **zh**: 通配符)
+
+> In computer (software) technology, a wildcard is a symbol used to replace or represent zero or more characters. 
+>
+> ——Wikipedia
+
+When specifying file names/paths:
+
+- the question mark `?` matches exactly one character. 
+
+- the asterisk character `*` matches zero or more characters.
+
 ---
 
-
-
-### Shell Script
+### 2. Shell Script
 
 - Some Tutorials:
   
@@ -74,6 +88,8 @@ When navigating through your directories, it’s important to know where you are
   [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
   
   [Shell编程](https://shellscript.readthedocs.io/zh-cn/latest/index.html) [ZH]
+  
+  [学习如何编写 Shell 脚本（基础篇）](https://juejin.cn/post/6930013333454061575) [ZH]
 
 
 
