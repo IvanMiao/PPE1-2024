@@ -83,15 +83,17 @@ When specifying file names/paths:
 
 - Some Tutorials:
   
-  [The Shell Scripting Tutorial](https://www.shellscript.sh/) (EN)
+  - [The Shell Scripting Tutorial](https://www.shellscript.sh/) (EN)
   
-  [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
+  - [Scripts Shell](https://linux.goffinet.org/administration/scripts-shell/) [FR]
   
-  [Shell编程](https://shellscript.readthedocs.io/zh-cn/latest/index.html) [ZH]
+  - [Shell编程](https://shellscript.readthedocs.io/zh-cn/latest/index.html) [ZH]
   
-  [学习如何编写 Shell 脚本（基础篇）](https://juejin.cn/post/6930013333454061575) [ZH]
+  - [学习如何编写 Shell 脚本（基础篇）](https://juejin.cn/post/6930013333454061575) [ZH]
 
 
+
+#### Basic Grammar
 
 - an example:
 
