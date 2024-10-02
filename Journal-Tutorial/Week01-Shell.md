@@ -110,25 +110,27 @@ done
 
 1.  `for month in {01..12};do`
 
-   This line starts a loop that will repeat for each month of the year, from `01` to `12`. The `{01..12}` syntax means that the loop will iterate with the values `01`, `02`, `03`, and so on, up to `12`.
+   - This line starts a loop that will repeat for each month of the year, from `01` to `12`. The `{01..12}` syntax means that the loop will iterate with the values `01`, `02`, `03`, and so on, up to `12`.
 
-   For each iteration, the variable `month` will take one of these values.
+   - For each iteration, the variable `month` will take one of these values.
 
 2.  `mkdir -p "$month"`
 
-   This command creates a directory named after the current value of `month`. The dollar `$` means `month` is a variable. For example, when `month` is `01`, it creates a directory called `01`.
+   - This command creates a directory named after the current value of `month`. The dollar `$` means `month` is a variable. For example, when `month` is `01`, it creates a directory called `01`.
 
-   The `-p` option ensures that no error is raised if the directory already exists.
+   - The `-p` option ensures that no error is raised if the directory already exists.
 
 3.  `mv 2016_"$month"* "$month"/`
 
-   The `mv` command moves files into the corresponding directory. It moves all files that start with `2016_` followed by the value of `month`. The `*` is a wildcard that matches any characters after `2016_"$month"` (e.g. it could match `2016_01_report.txt` or `2016_01_data.csv`).
+   - The `mv` command moves files into the corresponding directory. It moves all files that start with `2016_` followed by the value of `month`. The `*` is a wildcard that matches any characters after `2016_"$month"` (e.g. it could match `2016_01_report.txt` or `2016_01_data.csv`).
 
-   Finally, the `"$month"/` indicates the target directory where the files should be moved (e.g. the `01/` directory).
+   - Finally, the `"$month"/` indicates the target directory where the files should be moved (e.g. the `01/` directory).
 
 4.  `done`
 
-   This closed the loop, meaning the script will go back to the beginning, increment the `month` variable to the next value, and repeat the process for the next month.
+   - This closed the loop, meaning the script will go back to the beginning, increment the `month` variable to the next value, and repeat the process for the next month.
+
+
 
 ### 	Rewrite a script in one line
 
