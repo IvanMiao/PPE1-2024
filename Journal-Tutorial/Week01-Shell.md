@@ -1,8 +1,8 @@
-## Week 01 - Shell
+# Week 01 - Shell
 
 [TOC]
 
-### 1. Basic commands
+## 1. Basic commands
 
 0. **Syntax**:
    
@@ -63,7 +63,7 @@ When navigating through your directories, it’s important to know where you are
 
 <br/>
 
-#### Wildcards
+### Wildcards
 
 Wildcard (**fr**: caractères de remplacement; **zh**: 通配符)
 
@@ -79,7 +79,7 @@ When specifying file names/paths:
 
 ---
 
-### 2. Shell Script
+## 2. Shell Script
 
 - Some Tutorials:
   
@@ -93,7 +93,7 @@ When specifying file names/paths:
 
 
 
-#### Basic Grammar
+### Basic Grammar
 
 - an example:
 
@@ -130,7 +130,7 @@ done
 
    This closed the loop, meaning the script will go back to the beginning, increment the `month` variable to the next value, and repeat the process for the next month.
 
-#### 	Rewrite a script in one line
+### 	Rewrite a script in one line
 
 ​	If we do that, a script becomes a command that can be run directly in the terminal. (Hope it's not too long)
 
