@@ -5,3 +5,5 @@ Les journaux sont dans le dossier "Journal-Tutorial".
   - exercices git
 
 lorem ipsum
+
+Cette ligne doit rester après correction.
