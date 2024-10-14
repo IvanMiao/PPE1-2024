@@ -19,14 +19,14 @@ Ex.1.b:
     cat Exercice1/ann/2018/*/*.ann | grep Location | wc | awk '{print $1}' >> locations.txt
 
 Ex.2.a:
-    cat Exercice1/ann/2016/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -n > classement_2016.txt
+    cat Exercice1/ann/2016/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 > classement_2016.txt
 
-    cat Exercice1/ann/2017/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -n > classement_2017.txt
+    cat Exercice1/ann/2017/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 > classement_2017.txt
 
-    cat Exercice1/ann/2018/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -n > classement_2018.txt
+    cat Exercice1/ann/2018/*/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 > classement_2018.txt
 
 Ex.2.b:
-    cat Exercice1/ann/201*/05/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -n > classement_Mai.txt
+    cat Exercice1/ann/201*/05/*.ann | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 > classement_Mai.txt
 
 
 
