@@ -1,0 +1,155 @@
+      1 Afrique du Sud
+      1 Alaska
+      1 Albens
+      1 Alexandrie
+      1 Angleterre
+      1 Arménie
+      1 Asie
+      1 Australie
+      1 autoroute 83 Nord
+      1 autoroute E40
+      1 Azerbaïdjan
+      1 Bangladesh
+      1 Béchouanaland
+      1 Bosnie-Herzégovine
+      1 Botswana
+      1 boulevard Wilson
+      1 Brésil
+      1 Bulgarie
+      1 Canada
+      1 Cap Canaveral
+      1 Chypre
+      1 Colombey-les-deux-Églises
+      1 Croatie
+      1 Danemark
+      1 Eagle Pass
+      1 Égypte
+      1 Élysée
+      1 Etats-Unis
+      1 Floride
+      1 Francfort
+      1 Gravelines
+      1 Iran
+      1 Isère
+      1 Istanbul
+      1 Jérusalem-Est
+      1 Lanaudière
+      1 Laurentides
+      1 Le Caire
+      1 Liban
+      1 Libye
+      1 Lisbonne
+      1 Malaisie
+      1 Malawi
+      1 Manchester
+      1 Maroc
+      1 Mauritanie
+      1 Mercedes
+      1 Montérégie
+      1 Neptune
+      1 Nicaragua
+      1 Nigeria
+      1 Norvège
+      1 Nyassaland
+      1 Oman
+      1 Pakistan
+      1 Paraguay
+      1 Parc des Princes
+      1 Passage Victoria
+      1 Pays-Bas
+      1 Pologne
+      1 Porto Empedocle
+      1 Pyongyang
+      1 Qatar
+      1 République tchèque
+      1 Rhodésie
+      1 Roumanie
+      1 Royan
+      1 Saint-Jérôme
+      1 Saturne
+      1 Sénégal
+      1 Serbie
+      1 Seyssuel
+      1 Sicile
+      1 Skagway
+      1 Soudan
+      1 stade de Reggio d'Emilie
+      1 Switzerland
+      1 Tchad
+      1 Terre
+      1 Times Square
+      1 Togo
+      1 Vietnam
+      1 Yamachiche
+      1 Zaventem
+      1 Ziban
+      1 Zimbabwe
+      1 Zone euro
+      1 zone industrielle et artisanale des Landiers
+      2 Albanie
+      2 Antibes
+      2 autoroute A7
+      2 Autriche
+      2 Belgique
+      2 Biélorussie
+      2 Bruxelles
+      2 Corée du Nord
+      2 Corée du Sud
+      2 Entrelacs
+      2 Estonie
+      2 Finlande
+      2 Géorgie
+      2 Grenoble
+      2 Irlande
+      2 Japon
+      2 Laredo
+      2 Lettonie
+      2 Lituanie
+      2 Malte
+      2 Mauricie
+      2 mer de Chine méridionale
+      2 Moldavie
+      2 Outaouais
+      2 Paris
+      2 Reggio d'Emilie
+      2 Rio
+      2 Singapour
+      2 Slovénie
+      2 Système solaire
+      2 Titan
+      2 Turquie
+      3 Algérie
+      3 Biskra
+      3 Grèce
+      3 Islande
+      3 Jérusalem
+      3 Kiev
+      3 Macédoine
+      3 Méditerranée
+      3 Monténégro
+      3 New York
+      3 Saint-Marin
+      3 Stockholm
+      3 Texas
+      3 Wolfsburg
+      4 eSwatini
+      4 Israël
+      4 Russie
+      4 Swaziland
+      4 Yokohama
+      5 Aix-les-Bains
+      5 Chambéry
+      5 Portugal
+      6 Chine
+      6 Suisse
+      7 Savoie
+      9 Montréal
+      9 Québec
+     11 États-Unis
+     12 Suède
+     13 Ukraine
+     17 Espagne
+     19 Allemagne
+     19 Royaume-Uni
+     22 Italie
+     45 France
