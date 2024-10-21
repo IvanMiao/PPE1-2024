@@ -1,6 +1,12 @@
 # Week4 Shell Script
 
-**Tutos:** [UCB: Sysadmin Decal](https://decal.ocf.berkeley.edu/) (with slides and .mp4 recording!)
+**Tutos:** 
+
+[UCB: Sysadmin Decal](https://decal.ocf.berkeley.edu/) (with slides and .mp4 recording!)
+
+[Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
+
+
 
 ## Bash Grammar
 
