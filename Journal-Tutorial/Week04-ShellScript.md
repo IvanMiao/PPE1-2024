@@ -23,7 +23,9 @@ To run a bash scripts(usually .sh file):
   # requires shebang
   ```
 
-**Shebang** is a special comment at the beginning of a script, specifies that the file is a script and calls a certain interpreter.
+**Shebang** is a special comment at the beginning of a script, specifies that the file is a script and calls a certain interpreter. 
+
+A shebang in shell: `#!/bin/bash`
 
 
 
@@ -31,20 +33,45 @@ To run a bash scripts(usually .sh file):
 
 ```bash
 NAME="value"
-echo "$NAME"
+echo $NAME
 
 FOO=1
 expr $FOO + 1
 
 FOO=$(expr 1 + 1)
-echo "$FOO"
+echo $FOO
 ```
 
-- An asignment **must not** have whitespaces!
+- An assignment **must not** have whitespaces!
 - Use $VAR to call the variable
 - Variables are untyped, usually considered as a string
 - To evaluate expressions, use `expr`
 - We can assign a output to a variable
+
+
+
+We can save the arguments of a script as vairables :
+
+```bash
+# positional parameters
+
+POS1="$1"
+POS2="$2"
+POS3="$3"
+
+echo "$1 is the first positional parameter, \$1."
+echo "$2 is the second positional parameter, \$2."
+echo "$3 is the third positional parameter, \$3."
+```
+
+Execution:
+
+```shell
+~> positional.sh one two three
+one is the first positional parameter, $1.
+two is the second positional parameter, $2.
+three is the third positional parameter, $3.
+```
 
 
 
@@ -120,7 +147,5 @@ fi
    do
    	echo "nightmare "
    done
-   
    ```
-
    
