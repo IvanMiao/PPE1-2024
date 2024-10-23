@@ -153,7 +153,7 @@ done
 
 
 
-## Lire une exemple
+## Lire un exemple
 
 ```bash
 #!/usr/bin/bash
