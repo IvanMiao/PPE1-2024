@@ -13,32 +13,34 @@ if [ ! -f "$1" ] || [ ! -r "$1" ]; then
     exit 1
 fi
 
-
-get_info() {
-    local url="$1"
-
-    # Récupérer le code HTTP
-    local code_http=$(curl -o /dev/null -s -w "%{http_code}" "$url")
-
-    # Récupérer l'encodage (si présent)
-    local encodage=$(curl -sI "$url" | grep -i "Content-Type" | grep -o "charset=[^;]*" | cut -d= -f2)
-    if [[ -z "$encodage" ]]; then
-        encodage="Inconnu"
-    fi
-
-    # Récupérer le contenu et compter les mots
-    local contenu=$(curl -s "$url")
-    local nombre_mots=$(echo "$contenu" | wc -w)
-
-    # Retourner les informations
-    echo -e "${COUNT}\t${url}\t${code_http}\t${encodage}\t${nombre_mots}"
-}
-
-
 COUNT=1
+outout_csv="output.csv"
+
+echo -e "Count\tURL\tHTTP_CODE\tENCODING\tHTML\tDUMP" > "$outout_csv"
 
 while read -r line;
 do
-	get_info "${line}"
-	((COUNT++))
+    url="$line"
+
+    response=$(curl -s -I -L -w "HTTP_CODE:%{http_code}\nCONTENT_TYPE:%{content_type}\n" "$url" -o /dev/null)
+    http_code=$(echo "$response" | grep "HTTP_CODE" | cut -d':' -f2)
+    content_type=$(echo "$response" | grep "CONTENT_TYPE" | cut -d':' -f2)
+    encoding=$(echo "$content_type" | grep -oE 'charset=[^;]+' | cut -d'=' -f2)
+    
+    if [ $http_code -eq 200 ]; then
+        content=$(curl -s "$url")
+        html_file="page$COUNT.html"
+        txt_file="dump_$COUNT.txt"
+
+        echo "$content" > "$html_file"
+        dump=$(lynx -dump -nolist "page$COUNT.html")
+        echo "$dump" > "$txt_file"
+
+        echo -e "[$COUNT]\t$url\t$http_code\t$encoding\t$html_file\t$txt_file" >> "$outout_csv"
+    else
+        echo "[$COUNT] $url : ERROR! $http_code"
+        echo -e "[$COUNT]\t$url\t$http_code\t$encoding\t-\t-" >> "$outout_csv"
+    fi
+
+    COUNT=$((COUNT + 1))
 done < "$1"
